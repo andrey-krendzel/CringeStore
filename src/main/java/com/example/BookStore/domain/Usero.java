@@ -5,7 +5,7 @@ package com.example.BookStore.domain;
 import javax.persistence.*;
 
 @Entity
-public class User {
+public class Usero {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,10 +25,10 @@ public class User {
     @Column(name = "email", nullable = false)
     private String email; 
     
-    public User() {
+    public Usero() {
     }
 
-	public User(String username, String passwordHash, String role, String email) {
+	public Usero(String username, String passwordHash, String role, String email) {
 		super();
 		this.username = username;
 		this.passwordHash = passwordHash;

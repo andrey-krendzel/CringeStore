@@ -11,8 +11,8 @@ import com.example.BookStore.domain.Book;
 import com.example.BookStore.domain.BookRepository;
 import com.example.BookStore.domain.Category;
 import com.example.BookStore.domain.CategoryRepository;
-import com.example.BookStore.domain.User;
 import com.example.BookStore.domain.UserRepository;
+import com.example.BookStore.domain.Usero;
 
 
 
@@ -37,9 +37,9 @@ public class BookStoreApplication {
 		repository.save(new Book(12345, "The Fascist Manifesto", "Benito Mussolini", 1900, 13, drepository.findByName("Political books").get(0)));
 	
 		// Create users: admin/admin user/user
-		User user1 = new User("user", "$2y$12$PwYCv9Nfm4vRShh1h1RDZe1fxlocWz3EHPxWN.uYKN8d5NG6zXIjW", "USER",  "user@user.com");
-		User user2 = new User("admin", "$2y$12$F0sFhooRHkDu5tkvgyS/7OHoeykyTbY6TObn5xIc3euDD6mSGbJde", "ADMIN", "admin@admin.com");
-		User user3 = new User("user2", "$2y$12$PwYCv9Nfm4vRShh1h1RDZe1fxlocWz3EHPxWN.uYKN8d5NG6zXIjW", "USER", "user2@user.com");
+		Usero user1 = new Usero("user", "$2y$12$PwYCv9Nfm4vRShh1h1RDZe1fxlocWz3EHPxWN.uYKN8d5NG6zXIjW", "USER",  "user@user.com");
+		Usero user2 = new Usero("admin", "$2y$12$F0sFhooRHkDu5tkvgyS/7OHoeykyTbY6TObn5xIc3euDD6mSGbJde", "ADMIN", "admin@admin.com");
+		Usero user3 = new Usero("user2", "$2y$12$PwYCv9Nfm4vRShh1h1RDZe1fxlocWz3EHPxWN.uYKN8d5NG6zXIjW", "USER", "user2@user.com");
 		userRepository.save(user1);
 		userRepository.save(user2);
 		userRepository.save(user3);
